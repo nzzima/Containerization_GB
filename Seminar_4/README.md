@@ -13,6 +13,7 @@ nick@Ubuntu:~$ cd sem4/
 ```bash
 nick@Ubuntu:~/sem4$ nano Dockerfile
 ```
+Dockerfile:
 ```dockerfile
 FROM ubuntu:22.04
 
