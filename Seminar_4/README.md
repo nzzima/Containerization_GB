@@ -25,6 +25,19 @@ COPY app.py /app/
 
 CMD ["python3", "app.py"]
 ```
+Application:
+```python
+import random
+
+N = int(input("Enter length: "))
+
+list1 = [random.randint(0, 11) for i in range(N)]
+list2 = [random.randint(0, 11) for i in range(N)]
+
+print(list1)
+print(list2)
+print(*[i for i in list1 if i not in set(list2)])
+```
 Создание docker image:
 ```bash
 nick@Ubuntu:~/sem4$ docker build -t my_application .
@@ -63,5 +76,8 @@ docker/getting-started   latest    3e4394f6b72f   16 months ago    47MB
 Запуск docker:
 ```bash
 nick@Ubuntu:~/sem4$ docker run -it my_application
-
+Enter length: 10
+[2, 4, 1, 2, 0, 6, 11, 6, 10, 5]
+[2, 7, 2, 1, 10, 8, 1, 8, 10, 2]
+4 0 6 11 6 5
 ```
