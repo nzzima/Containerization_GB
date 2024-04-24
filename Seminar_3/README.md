@@ -9,6 +9,7 @@
 Устанавливаем postgresql:
 ```bash
 nick@Ubuntu2204: $ sudo apt install postgresql
+
 ```
 Запускаем контейнер docker:
 ```bash
@@ -19,3 +20,14 @@ nick@Ubuntu2204: $ docker container run --name="postgres" -p 5432:5432 -e POSTGR
 ```bash
 nick@Ubuntu2204: $ sudo fuser -k 5432/tcp
 ```
+![Docker start](/source/img1.png)
+![Docker start](/source/img2.png)
+
+Далее заходим (в новой консоли) в bash этого контейнера и оттуда в БД:   
+
+![Docker start](/source/img3.png)
+
+Создаем БД и заполняем ее данными:
+
+![Docker start](/source/img4.png)
+![Docker start](/source/img5.png)
