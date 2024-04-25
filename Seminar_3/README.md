@@ -31,3 +31,15 @@ nick@Ubuntu2204: $ sudo fuser -k 5432/tcp
 
 ![Docker start](/source/img4.png)
 ![Docker start](/source/img5.png)
+
+После этого необходимо запустить pgadmin4 с помощью docker:
+
+![Docker start](/source/img6.png)
+
+После этого заходим в web pgAdmin4 по адресу `localhost:82/login/`:
+
+![Docker start](/source/img7.png)
+
+Проходим авторизацию и видим созданную нами БД:
+
+![Docker start](/source/img8.png)
