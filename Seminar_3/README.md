@@ -20,26 +20,26 @@ nick@Ubuntu2204: $ docker container run --name="postgres" -p 5432:5432 -e POSTGR
 ```bash
 nick@Ubuntu2204: $ sudo fuser -k 5432/tcp
 ```
-![Docker start](/source/img1.png)
-![Docker start](/source/img2.png)
+![Docker start](/Seminar_3/source/img1.png)
+![Docker start](/Seminar_3/source/img2.png)
 
 Далее заходим (в новой консоли) в bash этого контейнера и оттуда в БД:   
 
-![Docker start](/source/img3.png)
+![Docker start](/Seminar_3/source/img3.png)
 
 Создаем БД и заполняем ее данными:
 
-![Docker start](/source/img4.png)
-![Docker start](/source/img5.png)
+![Docker start](/Seminar_3/source/img4.png)
+![Docker start](/Seminar_3/source/img5.png)
 
 После этого необходимо запустить pgadmin4 с помощью docker:
 
-![Docker start](/source/img6.png)
+![Docker start](/Seminar_3/source/img6.png)
 
 После этого заходим в web pgAdmin4 по адресу `localhost:82/login/`:
 
-![Docker start](/source/img7.png)
+![Docker start](/Seminar_3/source/img7.png)
 
 Проходим авторизацию и видим созданную нами БД:
 
-![Docker start](/source/img8.png)
+![Docker start](/Seminar_3/source/img8.png)
