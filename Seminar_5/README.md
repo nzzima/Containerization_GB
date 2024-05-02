@@ -28,5 +28,4 @@
 ![Docker](/Seminar_5/source/img13.png)  
 ![Docker](/Seminar_5/source/img14.png)  
 
-
-
+## Ход выполнения (Задание №2)
