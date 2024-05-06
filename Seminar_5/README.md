@@ -63,36 +63,3 @@ services:
         ports: 80:80
         environment: 
             MYSQL_ROOT_PASSWORD: '12345'           
-```
-![Docker](/Seminar_5/source/img19.png)  
-
-*Запускаем первый Dockerfile на ManagerNode:*   
-
-![Docker](/Seminar_5/source/img20.png)  
-![Docker](/Seminar_5/source/img21.png)  
-
-*Запускаем второй Dickerfile на WorkerNode:*   
-
-![Docker](/Seminar_5/source/img22.png)  
-![Docker](/Seminar_5/source/img23.png)  
-
-*Попробуем запустить первый Dockerfile на WorkerNode:*  
-
-![Docker](/Seminar_5/source/img24.png)  
-
-*(Ошибки дублирования не произошло т. к имена image разные)*  
-
-![Docker](/Seminar_5/source/img25.png)  
-
-*Запускаем на ManagerNode второй Dockerfile и получаем четыре работающих контейнера на двух node:*
-
-![Docker](/Seminar_5/source/img26.png)  
-![Docker](/Seminar_5/source/img27.png)  
-
-*Тем временем WorkerNode упал:*
-
-![Docker](/Seminar_5/source/img28.png) 
-
-*Создаем "реплики" образов и наблюдаем следующее:*
-
-![Docker](/Seminar_5/source/img29.png) 
