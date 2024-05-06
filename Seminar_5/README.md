@@ -29,3 +29,49 @@
 ![Docker](/Seminar_5/source/img14.png)  
 
 ## Ход выполнения (Задание №2)
+Создаем 2 Dockerfile-а:
+```dockerfile
+version: '3.10.6'
+
+services:
+
+    db:
+        image: mariadb:10.10.2
+        restart: always
+        environment: 
+            MYSQL_ROOT_PASSWORD: '12345'
+            
+    adminer:
+        image: adminer:4.8.1
+        restart: always
+        ports: 6080:8000
+```
+```dockerfile
+version: '3.9'
+
+services:
+
+    db:
+        image: mysql
+        restart: always
+        environment: 
+            MYSQL_ROOT_PASSWORD: '12345'
+            
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        restart: always
+        ports: 80:80
+        environment: 
+            MYSQL_ROOT_PASSWORD: '12345'           
+```
+![Docker](/Seminar_5/source/img19.png)  
+Запускаем первый Dockerfile на ManagerNode:   
+![Docker](/Seminar_5/source/img20.png)  
+![Docker](/Seminar_5/source/img21.png)  
+Запускаем второй Dickerfile на WorkerNode:   
+![Docker](/Seminar_5/source/img22.png)  
+![Docker](/Seminar_5/source/img23.png)  
+Попробуем запустить первый Dockerfile на WorkerNode:  
+![Docker](/Seminar_5/source/img24.png)  
+(Ошибки дублирования не произошло т. к имена image разные)  
+![Docker](/Seminar_5/source/img25.png)  
