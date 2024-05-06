@@ -65,13 +65,21 @@ services:
             MYSQL_ROOT_PASSWORD: '12345'           
 ```
 ![Docker](/Seminar_5/source/img19.png)  
+
 Запускаем первый Dockerfile на ManagerNode:   
+
 ![Docker](/Seminar_5/source/img20.png)  
 ![Docker](/Seminar_5/source/img21.png)  
+
 Запускаем второй Dickerfile на WorkerNode:   
+
 ![Docker](/Seminar_5/source/img22.png)  
 ![Docker](/Seminar_5/source/img23.png)  
+
 Попробуем запустить первый Dockerfile на WorkerNode:  
+
 ![Docker](/Seminar_5/source/img24.png)  
+
 (Ошибки дублирования не произошло т. к имена image разные)  
+
 ![Docker](/Seminar_5/source/img25.png)  
