@@ -84,11 +84,15 @@ services:
 
 ![Docker](/Seminar_5/source/img25.png)  
 
-Запускаем на ManagerNode второй Dockerfile и получаем четыре работающих контейнера на двух node:
+*Запускаем на ManagerNode второй Dockerfile и получаем четыре работающих контейнера на двух node:*
 
 ![Docker](/Seminar_5/source/img26.png)  
 ![Docker](/Seminar_5/source/img27.png)  
 
-Тем временем WorkerNode упал:
+*Тем временем WorkerNode упал:*
 
 ![Docker](/Seminar_5/source/img28.png) 
+
+*Создаем "реплики" образов и наблюдаем следующее:*
+
+![Docker](/Seminar_5/source/img29.png) 
