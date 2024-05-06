@@ -83,3 +83,12 @@ services:
 *(Ошибки дублирования не произошло т. к имена image разные)*  
 
 ![Docker](/Seminar_5/source/img25.png)  
+
+Запускаем на ManagerNode второй Dockerfile и получаем четыре работающих контейнера на двух node:
+
+![Docker](/Seminar_5/source/img26.png)  
+![Docker](/Seminar_5/source/img27.png)  
+
+Тем временем WorkerNode упал:
+
+![Docker](/Seminar_5/source/img28.png) 
