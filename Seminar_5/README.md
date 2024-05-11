@@ -63,3 +63,22 @@ services:
         ports: 80:80
         environment: 
             MYSQL_ROOT_PASSWORD: '12345'           
+
+```
+Компилируем NODE:  
+![Docker](/Seminar_5/source/img15.png)  
+Проверяем:  
+![Docker](/Seminar_5/source/img16.png)  
+![Docker](/Seminar_5/source/img17.png)    
+Получаем ошибку: "версия данного файла не поддерживается", продолжаем делать, как делали на семинаре. Запускаем первый Dockerfile:  
+![Docker](/Seminar_5/source/img18.png)    
+Проверяем:  
+![Docker](/Seminar_5/source/img19.png)  
+![Docker](/Seminar_5/source/img20.png)  
+Запускаем второй Dockerfile:  
+![Docker](/Seminar_5/source/img21.png)  
+![Docker](/Seminar_5/source/img22.png)    
+Воспользуемся функционалом Docker Swarm и создадим дубликат одного и того же образа:  
+![Docker](/Seminar_5/source/img23.png)  
+![Docker](/Seminar_5/source/img24.png)    
+Аналогично можем проделать с другими образами, далее повязать их сетью и получить полные дубликаты: БД + WEB
